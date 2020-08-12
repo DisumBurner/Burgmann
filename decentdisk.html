@@ -1,14 +1,12 @@
 <html>
     <head>
+        <title>Burgmann - Problem Solving</title>
         <style>
 *{
 	font-family: 'Nunito' !important;
 	font-size: 22px;
 }
 
-body {
-	background-color: black !important;
-}
 img {
     border-radius: 10px;
     display: block;
@@ -17,22 +15,49 @@ img {
   margin-right: auto;
   width: 35%;
   }
-  h3, h4 {
+  h2, h3 {
       color:aliceblue;
       display: block;
 text-align: center;
       margin-left: auto;
   margin-right: auto;
   width: 50%;
-  }
-</style>
 
+
+  }
+
+  body {
+    background: linear-gradient(-45deg, black, #fac927, black);
+    background-size: 400% 400%;
+    animation: change 5s ease-in-out infinite;
+    position:relative;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+</style>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
     </head>
     <body>
+
         <a href="https://canberragrammar.zoom.us/j/7106905153">
-        <img src="lion.jpg" alt="lion"/>
+        <img src="lion.jpg" alt="lion" class="animate__animated animate__backInDown animate__repeat-1"/>
     </a>
-        <h3>Well Done!</h3>
-        <h4>Click on the Image to join the Zoom!</h4>
+        <h2 >Well Done!</h3>
+        <h3 >Click on the Image to join the Zoom!</h4>
+
     </body>
 </html>
